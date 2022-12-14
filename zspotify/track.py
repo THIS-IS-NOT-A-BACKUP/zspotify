@@ -199,8 +199,10 @@ def download_track(mode: str, track_id: str, extra_keys=None, disable_progressba
                             unit_divisor=1024,
                             disable=disable_progressbar
                     ) as p_bar:
-                        for _ in range(int(total_size / ZSpotify.CONFIG.get_chunk_size()) + 1):
+                        last_read = 1
+                        while(downloaded < total_size and last_read):
                             data = stream.input_stream.stream().read(ZSpotify.CONFIG.get_chunk_size())
+                            last_read = len(data)
                             p_bar.update(file.write(data))
                             downloaded += len(data)
                             if ZSpotify.CONFIG.get_download_real_time():
