@@ -45,7 +45,6 @@ def get_song_info(song_id) -> Tuple[List[str], List[Any], str, str, Any, Any, An
         raise ValueError(f'Invalid response from TRACKS_URL:\n{raw}')
 
     try:
-        print(info)
         artists = []
         for data in info[TRACKS][0][ARTISTS]:
             artists.append(data[NAME])
