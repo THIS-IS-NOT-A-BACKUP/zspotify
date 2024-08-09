@@ -88,6 +88,7 @@ WINDOWS_SYSTEM = 'Windows'
 
 CODEC_MAP = {
     'aac': 'aac',
+    'aif': 'pcm_s16be',
     'fdk_aac': 'libfdk_aac',
     'm4a': 'aac',
     'mp3': 'libmp3lame',
@@ -98,6 +99,7 @@ CODEC_MAP = {
 
 EXT_MAP = {
     'aac': 'm4a',
+    'aif': 'aif',
     'fdk_aac': 'm4a',
     'm4a': 'm4a',
     'mp3': 'mp3',
