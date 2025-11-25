@@ -157,3 +157,6 @@ zs_config.json
 
 # MacOS file
 .DS_Store
+
+# backup
+*.bak

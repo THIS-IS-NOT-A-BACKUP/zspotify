@@ -28,6 +28,8 @@ ARTWORK = 'artwork'
 
 TRACKS = 'tracks'
 
+TOTAL_TRACKS = 'total_tracks'
+
 TRACK = 'track'
 
 ITEMS = 'items'
@@ -37,6 +39,12 @@ NAME = 'name'
 HREF = 'href'
 
 ID = 'id'
+
+ISRC = 'isrc'
+
+EXTERNAL_IDS = 'external_ids'
+
+COMMENT = 'comment'
 
 URL = 'url'
 
